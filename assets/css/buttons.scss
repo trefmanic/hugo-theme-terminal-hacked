@@ -1,0 +1,80 @@
+.button-container {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button,
+.button,
+a.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8;
+  border: 1px solid $java;
+  background: $java;
+  color: $nero;
+  font: inherit;
+  font-weight: bold;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+  border: 1px solid $daisy;
+  background: $daisy;
+  }
+
+  /* variants */
+
+  &.outline {
+    background: transparent;
+    box-shadow: none;
+    padding: 8px 18px;
+
+    :hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &.link {
+    background: none;
+    font-size: 1rem;
+  }
+
+  /* sizes */
+
+  &.small {
+    font-size: .8rem;
+  }
+
+  &.wide {
+    min-width: 200px;
+    padding: 14px 24px;
+  }
+}
+.code-toolbar {
+
+  .toolbar-item a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+  }
+}
+.copy-to-clipboard-button span{
+    color: $nero;
+}

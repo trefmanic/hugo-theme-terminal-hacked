@@ -1,0 +1,30 @@
+input, textarea, select {
+  background: transparent;
+  color: $wheat;
+  border: 1px solid $wheat;
+  border-radius: 0;
+  padding: 10px;
+  font: inherit;
+  appearance: none;
+
+  &:focus, :active {
+    border-color: $greynurse;
+    outline: 1px solid $greynurse;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+select {
+  background: $gunmetal;
+
+  option {
+    background: $gunmetal;
+  }
+}
+
+::placeholder {
+  color: transparentize($wheat, .5);
+}

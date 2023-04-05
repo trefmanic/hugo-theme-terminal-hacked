@@ -1,0 +1,12 @@
+name = "terminal-hacked"
+license = "MIT"
+licenselink = "https://github.com/trefmanic/hugo-theme-terminal-hacked/blob/master/LICENSE.md"
+description = "Simple clean theme with zenburn colors"
+homepage = "https://github.com/trefmanic/hugo-theme-terminal-hacked/"
+tags = ["blog", "clean","zenburn", "dark", "highlighting", "minimal", "monotone", "multilingual", "personal", "responsive", "simple", "technical", "retro"]
+features = ["blog", syntax highlighting"]
+min_version = 0.90.0
+
+[author]
+  name = "trefmanic"
+  homepage = "https://trefmanic.me"
