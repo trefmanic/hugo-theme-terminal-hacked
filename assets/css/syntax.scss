@@ -1,23 +1,39 @@
-code.language-css,
-code.language-scss,
-.token.boolean,
-.token.string,
 .token.entity,
 .token.url,
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string,
-.token.attr-value,
+.token.boolean {
+    color: $pavlova !important;
+}
+
+.token.string {
+    color: $mypink !important;
+}
+
+.token.number, {
+    color: $java;
+}
+
+.token.builtin {
+    color: $daisy !important;
+}
+
 .token.keyword,
 .token.control,
 .token.directive,
 .token.statement,
 .token.regex,
-.token.atrule,
-.token.number,
+.token.atrule, {
+    color: $wheat !important;
+}
+
+code.language-css,
+code.language-scss,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
 .token.inserted,
 .token.important {
-  color: $wheat !important;
+  color: $greynurse !important;
 }
 
 .token.tag-id,
@@ -44,20 +60,20 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: mix($wheat, #999, .9) !important;
+  color: $daisy !important;
 }
 
 .token.selector,
 .token.tag,
 .token.punctuation {
-  color: $greynurse;
+  color: $greynurse !important;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: $greygreen;
+  color: $greygreen !important;
 }
 
 .token.namespace {
@@ -141,13 +157,31 @@ pre[class*="language-"] {
   > .toolbar {
     button {
       font-size: .8em !important;
-      background: hsla(0,0%,87.8%,.2) !important;
-      color: #bbb !important;
+      color: $nero !important;
+      background: $java !important;
       box-shadow: 0 2px 0 0 rgba(0,0,0,.2) !important;
       border-radius: 0 !important;
       margin: 6px !important;
       padding: 10px !important;
       user-select:none
-    }
+     }
   }
+}
+div.code-toolbar > .toolbar > .toolbar-item > button:hover {
+    background: $daisy !important;
+}
+.code-toolbar {
+    .toolbar-item a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    }
 }

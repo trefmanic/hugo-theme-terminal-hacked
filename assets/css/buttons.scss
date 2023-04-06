@@ -60,27 +60,3 @@ a.button {
     padding: 14px 24px;
   }
 }
-.code-toolbar {
-
-  .toolbar-item a {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    appearance: none;
-    cursor: pointer;
-    outline: none;
-  }
-}
-
-//prism button colours
-div.code-toolbar > .toolbar > .toolbar-item > button {
-    background: $java !important;
-}
-.copy-to-clipboard-button span{
-    color: $nero;
-}
