@@ -7,9 +7,11 @@
     {{ if .Date }}
       <time class="post-date">
         {{ .Date.Format "2006-01-02" }} ::
-        {{ if $.Site.Params.showLastUpdated }}
-          [{{or $.Site.Params.updatedDatePrefix "Updated"}} :: {{ .Lastmod.Format "2006-01-02" }}]
-        {{ end }}
+            {{ if .Params.updated}}
+                {{ if $.Site.Params.showLastUpdated }}
+                    [{{or $.Site.Params.updatedDatePrefix "Updated"}} :: {{ .Lastmod.Format "2006-01-02" }}]
+                {{ end }}
+            {{ end }}
       </time>
     {{ end }}
   </div>
