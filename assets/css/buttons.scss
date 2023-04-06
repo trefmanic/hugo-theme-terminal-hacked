@@ -28,6 +28,7 @@ a.button {
   &:hover {
   border: 1px solid $daisy;
   background: $daisy;
+  color: $nero;
   }
 
   /* variants */
@@ -74,6 +75,11 @@ a.button {
     cursor: pointer;
     outline: none;
   }
+}
+
+//prism button colours
+div.code-toolbar > .toolbar > .toolbar-item > button {
+    background: $java !important;
 }
 .copy-to-clipboard-button span{
     color: $nero;

@@ -8,5 +8,5 @@
       </div>
   </div>
 </footer>
-<!--{{ $prism := resources.Get "js/prism.js" | js.Build | resources.Minify }}
-<script type="text/javascript" src="{{ $prism.RelPermalink }}"></script-->
+{{ $prism := resources.Get "js/prism.js" | js.Build | resources.Minify }}
+<script type="text/javascript" src="{{ $prism.RelPermalink }}"></script>
