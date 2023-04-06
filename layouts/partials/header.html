@@ -3,11 +3,6 @@
     <div class="header__logo">
       {{ partial "logo.html" . }}
     </div>
-    {{ if len $.Site.Menus }}
-      {{ partial "mobile-menu.html" . }}
-    {{ end }}
   </div>
-  {{ if len $.Site.Menus }}
-    {{ partial "menu.html" . }}
-  {{ end }}
+  <div class=about><a href="/about">{{ with $.Site.Params.About }}{{ . }}{{ else }}About{{ end }}</a></div>
 </header>
