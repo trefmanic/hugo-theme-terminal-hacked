@@ -4,8 +4,8 @@ licenselink = "https://github.com/trefmanic/hugo-theme-terminal-hacked/blob/mast
 description = "Simple clean theme with zenburn colors"
 homepage = "https://github.com/trefmanic/hugo-theme-terminal-hacked/"
 tags = ["blog", "clean","zenburn", "dark", "highlighting", "minimal", "monotone", "multilingual", "personal", "responsive", "simple", "technical", "retro"]
-features = ["blog", syntax highlighting"]
-min_version = 0.90.0
+features = ["blog", "syntax highlighting"]
+min_version = "0.90.0"
 
 [author]
   name = "trefmanic"
