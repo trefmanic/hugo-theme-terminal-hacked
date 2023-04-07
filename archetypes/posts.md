@@ -1,7 +1,7 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = "{{ .Date }}"
-updated: false
+updated = false
 tags = ["", ""]
 keywords = ["", ""]
 description = ""
