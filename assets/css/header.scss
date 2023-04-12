@@ -17,6 +17,12 @@
   &__logo {
     display: flex;
     flex: 1;
+    div {
+        background: $java;
+        &:hover {
+            background: $daisy;
+        }
+    }
 
     &:after {
       content: '|---[π]---->';
@@ -33,6 +39,10 @@
       text-decoration: none;
     }
   }
+}
+
+.header__logo {
+    color: red;
 }
 
 .about {
